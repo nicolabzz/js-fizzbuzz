@@ -6,17 +6,17 @@ for (let i = 1; i <= 100; i++) {
     
     box.className = 'box';
     
-    if (!(i % 15))
+    if (i % 15 == 0)
     {
         box.classList.add('orange');
         box.innerHTML = 'fizzbuzz';
     } 
-    else if (!(i % 5))
+    else if (i % 5 == 0)
     {
         box.classList.add('firebrick');
         box.innerHTML = 'buzz';
     }
-    else if (!(i % 3))
+    else if (i % 3 == 0)
     {
         box.classList.add('purple');
         box.innerHTML = 'fizz';
